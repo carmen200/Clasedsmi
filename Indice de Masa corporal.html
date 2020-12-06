@@ -1,0 +1,118 @@
+
+      <html><head><title>Masa Corporal</title></head>
+    
+       <body>
+
+        <body background="fondo.jpg">
+
+
+<table border="4" align="center" width="45%">
+
+<tr><td bgcolor="E9A5E5" align="center"><font face="Monotype Corsiva" size="9" 
+color="black"><b>
+Masa Corporal</b></font></td></tr></table>
+
+
+
+
+<br><br>
+          <table border="4" align="center">
+
+             <tr><td><img src="doc.jpeg"></td></tr></table>
+
+     <Script language="JavaScript">
+
+             function masa(form){
+                  peso=eval(form.peso.value);               
+                  estatura=eval(form.estatura.value);
+                  imc=peso/(estatura*estatura);
+
+            
+
+               if(imc<16){
+
+                resp="Delgadez severa";
+               form.resp.value=resp;
+
+                 }               
+
+             if(imc>=16 && imc<17){
+
+                resp="Delgadez moderada";
+               form.resp.value=resp;
+
+
+            }
+
+
+             if(imc>=17 && imc<18.5){
+
+                resp="Delgadez leve";
+               form.resp.value=resp;
+
+
+            }
+
+             if(imc>=18.5 && imc<25){
+
+                resp="Delgadez normal";
+               form.resp.value=resp;
+
+
+            }
+             if(imc>=25 && imc<30){
+
+                resp="Preobesidad";
+               form.resp.value=resp;
+
+
+            }
+            if(imc>=30 && imc<35){
+
+                resp="Obesidad leve";
+               form.resp.value=resp;
+
+
+            }
+
+            if(imc>=35 && imc<40){
+             
+               resp="Obecidad de tipo II";
+                  form.resp.value=resp; 
+           }
+           
+           if(imc>=40){
+
+                resp="Obecidad de tipo III";
+                   form.resp.value=resp;
+
+          }
+
+
+         }
+
+
+    </script>
+
+
+
+
+      <center>
+         <form name="formulario">
+           <font face="Comic Sans MS" color="E23F0B" size="5">Peso:</font>
+           <input type="text" name="peso" size="10"><br>
+           <font face="Comic Sans MS" color="E23F0B" size="5">Estatura:</font>
+           <input type="text" name="estatura" size="10"><br>
+                 
+           <input type="button" value="Masa Corporal" size="20" Onclick="masa(this.form)">
+
+
+         
+           <font face="Comic Sans MS" color="E23F0B" size="5">Diagn&oacute;stico:</font>
+           <input type="text" name="resp" size="20"><br>
+
+
+
+          </form>
+      
+</body></html>

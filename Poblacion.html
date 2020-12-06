@@ -1,0 +1,22 @@
+
+        
+
+       <Script language="JavaScript">
+        
+          generacion=80;
+          condiciones=5;
+           pob_ant=0.8;
+
+           for(i=1;i<=generacion;i++){
+
+                pob_act=condiciones*pob_ant*(1-pob_ant);
+                pob_ant=condiciones*pob_ant*(1-pob_ant);
+
+           document.write("Gen "+i +" = " +pob_ant+"<br>");
+             
+
+             }
+
+           </Script>              
+        
+               
